@@ -17,5 +17,5 @@ for i in range(1, int(input()) + 1):
     start = html.find('<meta name="description" content="') + len('<meta name="description" content="')
     end = html.find('<meta name="keywords"') - 7
     aneks.append(html[start:end])
-for i in range(0, len(aneks)):
+for i in range(len(aneks)):
     sound(aneks[i])
